@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Something from nothing</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Elizabeth Stark" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="user.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Something from nothing
+## bootstrapping a TensorFlow model from scratch
+### Elizabeth Stark
+### GDG DevFest 2018
+
+---
+
+
+
+
+
+
+layout: true
+
+.footer[Elizabeth Stark @tech_is_dead  &amp;emsp;&amp;emsp; symbolix.com.au  @SymbolixAU]
+
+---
+
+
+background-image: url("images/aboutus.jpg")
+background-size: contain
+
+???
+
+We do:
+
+* AI/machine learning and datascience
+* stats and consulting
+
+We work in 
+
+* transport and urban networks
+* Environmental managment
+* Organisations 
+
+We are avid open source advocates
+
+---
+
+class: inverse, center, middle
+
+# It started with a frog ...
+
+---
+
+background-image: url("images/Perons_Tree_Frog.jpg")
+background-size: contain
+
+
+???
+
+---
+
+background-image: url("images/map_2011-2016.png")
+background-size: contain
+
+???
+
+# Actually ... lots of frogs
+
+
+---
+
+# The first challenge
+
+.image-5[[![ST](images/frog_btn.svg)](sounds/SouthernToadlet.wav)] Southern Toadlet
+.image-5[[![PTF](images/frog_btn.svg)](sounds/PeronsTreeFrog.wav)] Peron's Tree Frog
+.image-5[[![GGF](images/frog_btn.svg)](sounds/GrowlingGrassFrog.wav)] GGF
+
+---
+
+class: center
+
+# Computer listening vs computer vision
+
+
+.pull-left[
+
+
+Keyword="sound"  : ~100K papers 
+Keyword="image"  : ~3.5Mil papers 
+]
+
+.pull-right[
+![arXiv](images/arxiv.png)
+]
+
+
+---
+
+class: inverse, center, middle
+
+# Play with the ~~cool kids toys~~ computer vision tools
+
+---
+
+# Pipeline to convert sound -&gt; images
+
+---
+
+# The second challenge
+
+Not enough data
+
+
+---
+
+# The third challenge MONEY
+
+---
+
+Pre-trained models ? No
+
+Transfer learning...? Maybe
+
+Careful control to stop overfitting ? Defininitely!
+
+---
+
+class: inverse, center, middle
+
+# Time to dive into the tools
+
+---
+
+# Data augmentation
+
+---
+
+# Roll your own
+
+---
+
+# Deeper may not be better
+
+
+---
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+})();
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

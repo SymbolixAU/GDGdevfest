@@ -1,6 +1,6 @@
 ---
 title: "Something from nothing"
-subtitle: "bootstrapping a TensorFlow model from scratch"
+subtitle: "TensorFlow models from scratch"
 author: "Elizabeth Stark"
 date: "GDG DevFest 2018"
 output:

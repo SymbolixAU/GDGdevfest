@@ -91,6 +91,8 @@ background-size: contain
 
 ---
 
+class: inverse, center, middle
+
 # The first challenge
 
 .image-5[[![ST](images/frog_btn.svg)](sounds/SouthernToadlet.wav)] Southern Toadlet
@@ -104,41 +106,41 @@ class: center
 # Computer listening vs computer vision
 
 
-.pull-left[
-
-
-Keyword="sound"  : ~100K papers 
-Keyword="image"  : ~3.5Mil papers 
-]
-
-.pull-right[
 ![arXiv](images/arxiv.png)
-]
+
+Keyword="sound"  : ~100K papers
+
+Keyword="image"  : ~3.5Mil papers 
+
+
+
+---
+
+class: center, middle
+
+# Solution:
+
+## Play with the ~~cool kids toys~~ computer vision tools
+
+---
+
 
 
 ---
 
 class: inverse, center, middle
 
-# Play with the ~~cool kids toys~~ computer vision tools
+# The second challenge 
+
+![moneyfrog](images/money_frog.png)
 
 ---
+class: inverse, center, middle
 
-# Pipeline to convert sound -> images
-
----
-
-# The second challenge
-
-Not enough data
+# The third challenge
 
 
 ---
-
-# The third challenge MONEY
-
----
-
 Pre-trained models ? No
 
 Transfer learning...? Maybe
@@ -163,5 +165,8 @@ class: inverse, center, middle
 
 # Deeper may not be better
 
+background-image: url("images/inside_alexnet.png")
+background-size: contain
 
+https://medium.com/nanonets/nanonets-how-to-use-deep-learning-when-you-have-limited-data-f68c0b512cab
 ---

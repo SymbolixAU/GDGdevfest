@@ -1,5 +1,6 @@
 /* faded text*/
 .fade { color: lightgray; }
+.lightsecondary {color : #f5fd67;}
 
 .footer {
   background-color: #001f3f;
@@ -37,8 +38,8 @@
   vertical-align: auto;
 }
 
-.image-20 img {
-  width: 20%;
+.image-30 img {
+  width: 30%;
   margin: auto;
   vertical-align: auto;
 }

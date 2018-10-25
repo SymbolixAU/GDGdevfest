@@ -35,7 +35,8 @@ duo_accent(
   header_font_google = google_font("Josefin Sans"),
   text_font_google   = google_font("Montserrat", "300", "300i"),
   code_font_google   = google_font("Droid Mono"),
-  table_row_even_background_color = lighten_color("#f5fd67", 0.6)
+  table_row_even_background_color = lighten_color("#f5fd67", 0.6),
+  text_font_size = "24px"
 )
 
 ```
@@ -88,16 +89,37 @@ background-size: contain
 
 # Actually ... lots of frogs
 
-
 ---
 
 class: inverse, center, middle
 
-# The first challenge
+# The first challenge 
+
+![moneyfrog](images/money_frog.png)
+
+---
+
+background-image: url("images/bootstrap_unsplash.jpg")
+background-size: fill
+
+# .lightsecondary[Solution:]
+
+<!-- ![bootstrap](images/bootstrap_unsplash.jpg) -->
+
+???
+Photo by Max Conrad on Unsplash
+---
+
+
+class: inverse, center, middle
+
+# The second challenge
 
 .image-5[[![ST](images/frog_btn.svg)](sounds/SouthernToadlet.wav)] Southern Toadlet
 .image-5[[![PTF](images/frog_btn.svg)](sounds/PeronsTreeFrog.wav)] Peron's Tree Frog
 .image-5[[![GGF](images/frog_btn.svg)](sounds/GrowlingGrassFrog.wav)] GGF
+
+![sound](images/frogAmplitude15secs.png)
 
 ---
 
@@ -123,50 +145,184 @@ class: center, middle
 ## Play with the ~~cool kids toys~~ computer vision tools
 
 ---
+background-image: url("images/callspectra.png")
+background-size: contain
+
+???
+
+explain spectra
 
 
 
 ---
 
-class: inverse, center, middle
 
-# The second challenge 
+class: inverse, center
 
-![moneyfrog](images/money_frog.png)
-
----
-class: inverse, center, middle
+background-image: url("images/tags.jpg")
+background-size: contain
 
 # The third challenge
 
+???
+
+We have lots of data but not a lot of tagged data.  For time and money reasons we needed a POC to get more data....
 
 ---
-Pre-trained models ? No
 
-Transfer learning...? Maybe
+# How few data?
 
-Careful control to stop overfitting ? Defininitely!
+* ~1,400 individual tagged calls
+
+* 5 classes
+  - Litoria fallax (Eastern Dwarf Tree frog)
+  - Limnodynastes tasmanienses (Spotted grass frog)
+  - Crinia signifera (Common Eastern froglet)
+  - Limnodynastes peronii (Striped Marsh frog)
+  - Other frog
+
+### …… And about 100 million billion crickets calling over the top
+
+
+---
+
+class: right
+
+background-image: url("images/underthehood.jpg")
+background-size: cover
+
+# Solution
+
+
+ 
+???
+
+Photo by Hosea Georgeson on Unsplash
+ 
+---
+
+class: inverse, center, middle
+
+# Our toolbox
+ 
+ 
+---
+
+background-image: url("images/rstudio-training-metrics-full.gif")
+background-size: contain
+
+
+---
+
+class: center
+
+# With all the usual tools
+
+![](images/rtf_tools1.png)
+![](images/rtf_tools2.png)
 
 ---
 
 class: inverse, center, middle
 
-# Time to dive into the tools
+# Tricks and tips
 
 ---
-
-# Data augmentation
-
----
-
-# Roll your own
-
----
-
-# Deeper may not be better
 
 background-image: url("images/inside_alexnet.png")
 background-size: contain
 
+## Leave the deepest networks for the big datasets
+
+
+
+???
+
 https://medium.com/nanonets/nanonets-how-to-use-deep-learning-when-you-have-limited-data-f68c0b512cab
+
+---
+
+## Our network
+
+
+---
+
+class: middle, center
+
+# Even data sets are better
+
+IMAGE
+
+---
+
+
+# Data augmentation 
+
+* Normalise/standardise
+* Rotate
+* Shift/Jitter
+* Shear
+* Zoom
+* Flip
+
+
+---
+
+class: right
+
+background-image: url("images/rotation.png")
+background-size: contain
+
+# Rotation
+
+---
+
+background-image: url("images/shift.png")
+background-size: contain
+background-position: bottom
+
+# Shift
+
+---
+
+
+class: inverse, center, middle
+
+# The result?
+
+
+???
+
+## Worked better than it had any right to!
+
+
+---
+
+background-image: url("images/results.png")
+background-size: contain
+
+
+---
+
+class: center
+
+# Next steps
+
+
+.image-30[ ![ideas](images/ideas.png)] 
+.image-30[ ![data](images/data.png)]
+.image-30[ ![money](images/money_frog.png)]
+
+---
+
+class: inverse, center
+
+# Questions? Issues?
+
+https://github.com/SymbolixAU/
+
+www.symbolix.com.au  ;   @symbolixAU (twitter, github, SO)
+
+![bye](images/bye.gif)
+
 ---
